@@ -1,0 +1,15 @@
+.blue {
+  background: blue;
+
+  :global {
+    .red {
+      background: red;
+    }
+  }
+
+  &:global {
+    &.green {
+      background: green;
+    }
+  }
+}
